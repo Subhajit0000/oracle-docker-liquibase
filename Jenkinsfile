@@ -24,7 +24,7 @@ node {
         --url=jdbc:oracle:thin:@localhost:1521:oracle \
         --username=dummy \
         --password=dummy \
-        --changeLogFile=myChangeLog.oracle.sql
+        --changeLogFile=myChangeLog.oracle.sql \
         updateSQL"
   	
   }
@@ -38,7 +38,7 @@ node {
         --url=jdbc:oracle:thin:@localhost:1521:oracle \
         --username=dummy \
         --password=dummy \
-        --changeLogFile=myChangeLog.oracle.sql
+        --changeLogFile=myChangeLog.oracle.sql \
         update"
   
   }
