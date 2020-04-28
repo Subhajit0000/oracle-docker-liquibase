@@ -18,14 +18,28 @@ node {
   
   stage('Liquibase UpdateSQL') {
   		
-  		sh "liquibase updateSQL"
+  		sh "java -jar liquibase.jar \
+        --driver=oracle.jdbc.OracleDriver \
+        --classpath=ojdbc8-19.3.0.0.jar \
+        --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
+        --username=dummy \
+        --password=dummy \
+        --changeLogFile=myChangeLog.oracle.sql \
+        updateSQL"
   	
   }
   
   
   stage('Liquibase Update') {
   
-  	    sh "liquibase update"
+  	    sh "java -jar liquibase.jar \
+        --driver=oracle.jdbc.OracleDriver \
+        --classpath=ojdbc8-19.3.0.0.jar \
+        --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
+        --username=dummy \
+        --password=dummy \
+        --changeLogFile=myChangeLog.oracle.sql \
+        update"
   
   }
   cleanWs()
