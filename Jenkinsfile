@@ -18,7 +18,7 @@ node {
   
   stage('Liquibase UpdateSQL') {
   		
-  		sh "java -jar liquibase.jar \
+  		sh "java -jar liquibase-core-3.5.5.jar \
         --driver=oracle.jdbc.OracleDriver \
         --classpath=/lib/* \
         --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
@@ -32,9 +32,9 @@ node {
   
   stage('Liquibase Update') {
   
-  	    sh "java -jar liquibase.jar \
+  	    sh "java -jar liquibase-core-3.5.5.jar \
         --driver=oracle.jdbc.OracleDriver \
-        --classpath=/lib/*:ojdbc8-19.3.0.0.jar \
+        --classpath=/lib/* \
         --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
         --username=dummy \
         --password=dummy \
