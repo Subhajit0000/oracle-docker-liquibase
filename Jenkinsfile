@@ -21,7 +21,7 @@ node {
   		sh "java -jar liquibase-2.0.5.jar \
         --driver=oracle.jdbc.OracleDriver \
         --classpath=ojdbc6.jar \
-        --url=jdbc:oracle:thin:@localhost:1521:oracle \
+        --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
         --username=dummy \
         --password=dummy \
         --changeLogFile=myChangeLog.oracle.sql \
@@ -35,7 +35,7 @@ node {
   	    sh "java -jar liquibase-2.0.5.jar \
         --driver=oracle.jdbc.OracleDriver \
         --classpath=ojdbc6.jar \
-        --url=jdbc:oracle:thin:@localhost:1521:oracle \
+        --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
         --username=dummy \
         --password=dummy \
         --changeLogFile=myChangeLog.oracle.sql \
