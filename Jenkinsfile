@@ -20,7 +20,7 @@ node {
   		
   		sh "java -jar liquibase.jar \
         --driver=oracle.jdbc.OracleDriver \
-        --classpath=ojdbc8-19.3.0.0.jar \
+        --classpath=\lib:ojdbc8-19.3.0.0.jar \
         --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
         --username=dummy \
         --password=dummy \
@@ -34,7 +34,7 @@ node {
   
   	    sh "java -jar liquibase.jar \
         --driver=oracle.jdbc.OracleDriver \
-        --classpath=ojdbc8-19.3.0.0.jar \
+        --classpath=\lib:ojdbc8-19.3.0.0.jar \
         --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
         --username=dummy \
         --password=dummy \
