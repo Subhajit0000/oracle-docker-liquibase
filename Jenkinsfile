@@ -24,7 +24,7 @@ node {
         --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
         --username=dummy \
         --password=dummy \
-        --changeLogFile=/master.oracle.xml \
+        --changeLogFile=myChangeLog.oracle.xml \
         updateSQL"
   	
   }
@@ -38,7 +38,7 @@ node {
         --url=jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain \
         --username=dummy \
         --password=dummy \
-        --changeLogFile=/master.oracle.xml \
+        --changeLogFile=myChangeLog.oracle.xml \
         update"
   
   }
