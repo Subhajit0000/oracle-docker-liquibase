@@ -19,7 +19,7 @@ node {
   stage('Liquibase UpdateSQL') {
   		
   		sh "java -jar liquibase-core-3.5.5.jar \
-        --defaultsFile=liquibase.properties
+        --defaultsFile=liquibase.properties \
         updateSQL"
   	
   }
@@ -28,7 +28,7 @@ node {
   stage('Liquibase Update') {
   
   	    sh "java -jar liquibase-core-3.5.5.jar \
-        --defaultsFile=liquibase.properties
+        --defaultsFile=liquibase.properties \
         update"
   
   }
