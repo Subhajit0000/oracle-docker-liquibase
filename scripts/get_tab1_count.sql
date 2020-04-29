@@ -1,4 +1,3 @@
--- get_tab1_count.sql
 CREATE OR REPLACE FUNCTION get_tab1_count RETURNS NUMBER AS
   l_count  NUMBER;
 BEGIN

@@ -1,5 +1,3 @@
--- tab1.sql
-
 CREATE TABLE tab1 (
   id          NUMBER,
   description VARCHAR2(50),
