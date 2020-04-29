@@ -5,7 +5,7 @@
                endDelimiter=";"
                path="scripts/function.sql"
                relativeToChangelogFile="true"
-               splitStatements="true"
+               splitStatements="false"
                stripComments="false"/>
     </changeSet>
     <changeSet author="subhajitsaha" id="02_tab1">
