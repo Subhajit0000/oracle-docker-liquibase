@@ -1,20 +1,4 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
-	<changeSet author="subhaitsaha" id="01_tab1_seq">
-      <sqlFile dbms="oracle"
-               endDelimiter=";"
-               path="scripts/function.sql"
-               relativeToChangelogFile="true"
-               splitStatements="true"
-               stripComments="false"/>
-    </changeSet>
-    <changeSet author="subhajitsaha" id="02_tab1">
-      <sqlFile dbms="oracle"
-               endDelimiter=";"
-               path="scripts/sequence.sql"
-               relativeToChangelogFile="true"
-               splitStatements="true"
-               stripComments="false"/>
-    </changeSet>
-    
+	<includeAll path="/myChangeLog.oracle.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
