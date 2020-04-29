@@ -17,4 +17,5 @@
                stripComments="false"/>
     </changeSet>
     
+    
 </databaseChangeLog>
